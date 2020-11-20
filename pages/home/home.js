@@ -1,66 +1,30 @@
-// pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    name:'Hello 小程序',
+    age:19,
+    perpeo:[
+      {id:1,name:'小明',age:10},
+      {id:2,name:'小红',age:9},
+      {id:3,name:'小李',age:11},
+    ],
+    counter:0
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  plus(){
+    //1.错误做法，界面不会刷新
+    // this.data.counter++;
+    // console.log(this.data.counter)
 
+    this.setData({
+      counter:this.data.counter+1
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  sub(){
+    this.setData({
+      counter:this.data.counter-1
+    })
   }
+
+  
 })

@@ -1,2 +1,15 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+<!-- 小程序的数据绑定 -->
+<view>{{name}}</view>
+<view>我的年龄:{{age}}</view>
+<view>你的年龄:{{age + 1}}</view>
+
+<!-- 列表展示 -->
+<view wx:for="{{perpeo}}">{{item.name}}--{{item.age}}</view>
+
+<!-- 事件监听 -->
+<view>当前计数:{{counter}}</view>
+<button size="mini" bindtap="plus">计数加1</button>
+<button size="mini" bindtap="sub">计数减1</button>
+
+
