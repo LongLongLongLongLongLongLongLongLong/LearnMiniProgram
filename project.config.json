@@ -37,7 +37,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.0.4",
+  "libVersion": "2.12.2",
   "appid": "wxc63bec18230b8fed",
   "projectname": "XiaoChengXunStudy",
   "debugOptions": {
