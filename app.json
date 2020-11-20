@@ -10,7 +10,8 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "购物街",
     "backgroundColor": "#eeeeee",
-    "backgroundTextStyle": "light"
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "list": [
