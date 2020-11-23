@@ -1,2 +1,10 @@
 <!--pages/home/home.wxml-->
 <text>Hello</text>
+
+<button size="mini"
+open-type="getUserInfo"
+bindgetuserinfo="handleGetUserInfo">获取授权</button>
+
+<!-- 展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
