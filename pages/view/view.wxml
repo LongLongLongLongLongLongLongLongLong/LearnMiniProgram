@@ -1,0 +1,16 @@
+
+<view class="box">哈哈</view>
+<view>你好</view>
+
+<view class="box1" hover-class="hoveclass" hover-stay-time="{{0}}">你好</view>
+
+
+<view class="box2" hover-class="hoveclass2">
+  <view 
+  class="box1" 
+  hover-class="hoveclass" 
+  hover-stay-time="{{0}}"
+  hover-stop-propagation="{{true}}"
+  >
+  你好</view>
+</view>

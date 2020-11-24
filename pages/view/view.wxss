@@ -1,0 +1,29 @@
+/* pages/view/view.wxss */
+
+.box{
+  background-color: red;
+}
+
+.box1{
+  width: 60px;
+  height: 80px;
+  background: red;
+}
+
+.hoveclass{
+  background: orange;
+  font-size:30px;
+
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin-top: 100px;
+}
+
+.hoveclass2{
+  background: yellow;
+  font-size:60px;
+}
