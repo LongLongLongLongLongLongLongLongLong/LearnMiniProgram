@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<text>Hello World</text>
+<text>\n小程序\n</text>
+
+<!-- 默认文本不能选中 -->
+<text selectable="{true}">你好\n</text>
+<text selectable>你好\n</text>
+
+<!-- 空格大小 -->
+<text >你 好\n</text>
+<text sapce="nbsp">你 好\n</text>
+<text  space="ensp">你 好\n</text>
+<text space="emsp">你 好\n</text>
+
+<!-- 是否解码 -->
+<text decode="true">5 &gt; 3\n</text>
+
+

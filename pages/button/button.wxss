@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+
+.press{
+  background-color: red;
+  color:#ffffff;
+}
