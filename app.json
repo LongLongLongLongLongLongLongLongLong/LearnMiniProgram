@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/input/input",
+    "pages/image/image",
     "pages/view/view",
-
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap69.json"
 }

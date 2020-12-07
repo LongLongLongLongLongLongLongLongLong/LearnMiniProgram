@@ -1,0 +1,15 @@
+<!--pages/image/image.wxml-->
+<!-- image可以写成单标签，也可以写成又标签 -->
+<!-- iamge默认有自己的大小 320x240 -->
+<!-- <image/> -->
+<text>hello</text>
+ <!-- 可以设置本地地址，可以设置远程图片 -->
+ <image src='../assets/test.png'/>
+ <image src='/pages/assets/test.png'/>
+ <image src='{{imagepath}}'/>
+
+ <!-- 如何显示相册中的图片 -->
+ <button bindtap="handleChooseAlbum">选中相册</button>
+
+
+

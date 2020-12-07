@@ -1,0 +1,13 @@
+<!--input的基本使用-->
+<input> </input>
+<!-- value是默认值 -->
+<input value="我是input"/>
+<!-- type来决定键盘类型 -->
+<input type="number"/>
+
+<input type="password"/>
+<!-- 占位 -->
+<input placeholder="请输入内容" maxlength="140"/>
+
+<!-- input绑定事件 -->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"/>
