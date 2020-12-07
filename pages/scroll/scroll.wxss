@@ -1,0 +1,32 @@
+
+/* pages/scroll/scroll.wxss */
+
+.container1{
+  background: red;
+  white-space: nowrap;
+
+}
+
+.item1{
+
+  width: 100px;
+  height: 100px;
+  background: rosybrown;
+  margin: 10px 10px;
+  display: inline-block
+
+}
+
+.container2{
+  background: orange;
+  white-space: nowrap;
+  height: 200px;
+  margin-top: 10px;
+
+}
+
+.item2{
+  height: 100px;
+  background: blue;
+  margin: 10px;
+}
