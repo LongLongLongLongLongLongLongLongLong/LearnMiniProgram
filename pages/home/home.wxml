@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+
+<view class="view1" capture-bind:tap="catchview1" bindtap="tapview1">
+  <view class="view2" capture-bind:tap="catchview2" catchtap="tapview2">
+    <view class="view3" capture-bind:tap="catchview3" bindtap="tapview3">
+    </view>
+  </view>
+</view>

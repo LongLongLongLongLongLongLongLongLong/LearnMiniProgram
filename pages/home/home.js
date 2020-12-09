@@ -5,62 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goods:['音乐','电影','舞蹈','学习']
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
 
+
+  catchview1(){
+    console.log('capture1');
+  },
+  tapview1(){
+    console.log('tapview1');
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  catchview2(){
+    console.log('capture2');
+  },
+  tapview2(){
+    console.log('tapview2');
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  catchview3(){
+    console.log('capture3');
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  tapview3(){
+    console.log('tapview3');
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
