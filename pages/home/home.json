@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    // key:value key是要使用的自定义的组件名，value是组件路径，可以绝对路径，也可以相对路径
+    "mycpn":"/components/mycpn/mycpn"
+  }
 }

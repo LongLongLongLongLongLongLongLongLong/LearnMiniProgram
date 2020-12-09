@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
 <text>Hello</text>
+<mycpn></mycpn>
