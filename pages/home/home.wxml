@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+
+<block wx:for="{{goods}}">
+  <view bindtap="btnclick" data-item="{{item}}"  data-index="{{index}}">{{item}}</view>
+</block>
