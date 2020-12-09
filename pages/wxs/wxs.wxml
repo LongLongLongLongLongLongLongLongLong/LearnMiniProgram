@@ -1,0 +1,26 @@
+<!--第一种使用方式，直接在wxml中定义并使用-->
+<!-- <wxs module="information">
+  //JS语法，不能使用ES 6语法
+  var msg = 'Hello';
+  var name = 'gao';
+  var sum = function(num1,num2){
+    return num1 + num2;
+  }
+
+  //必须要导出，其他view才能使用 
+  module.exports={
+    msg:msg,
+    name:name,
+    sum:sum
+  }
+</wxs> -->
+<!-- 必须使用相对路径导入，不可以使用绝对路径 -->
+<wxs src="../../wxs/info.wxs" module="information"/>
+
+<view>{{information.msg}}</view>
+<view>{{information.name}}</view>
+<view>{{information.sum(60,20)}}</view>
+
+<!-- 实际使用，如：希望对价格保留两位小数 -->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(price,2)}}</view>

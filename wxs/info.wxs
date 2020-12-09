@@ -1,0 +1,13 @@
+
+  var msg = 'Hello';
+  var name = 'gao';
+  var sum = function(num1,num2){
+    return num1+num2;
+  }
+
+  //必须要导出，其他view才能使用 
+  module.exports={
+    msg:msg,
+    name:name,
+    sum:sum
+  }
