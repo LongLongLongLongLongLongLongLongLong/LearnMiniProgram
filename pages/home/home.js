@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isShow:false,
+    score:90,
+    movies:['飞人','大侠'],
+    nums:[
+      [1,2,3,4],
+      [5,6,7,8],
+      ['a','b','c','d']
+    ],
   },
 
+  showContent(){
+    this.setData({
+      isShow:!this.data.isShow
+
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

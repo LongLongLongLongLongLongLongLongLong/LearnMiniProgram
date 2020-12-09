@@ -1,2 +1,42 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+
+
+<button bindtap="showContent">显示或隐藏</button>
+<view wx:if="{{isShow}}">哈哈</view>
+
+<view wx:if="{{score >=90}}">优秀</view>
+<view wx:elif="{{score >=80}}">良好</view>
+<view wx:elif="{{score >=60}}">及格</view>
+<view wx:else>不及格</view>
+
+
+<view hidden="{{true}}">我是Hidden属性隐藏的内容</view>
+<view wx:if="{{false}}">我是wxif属性隐藏的内容</view>
+
+<!-- wx:if和hidden有什么区别 -->
+<!-- hidden隐藏组件后，组件还是存在的 -->
+<!-- wx:if隐藏组件后，组件是不在的，不有创建 -->
+<!-- 频繁显示和隐藏使用hidden，如果显示和隐藏次数少使用wx:if -->
+
+<view>---------列表渲染---------</view>
+<!-- 遍历数组，字符串，数字 -->
+<view wx:for="{{['abc','音乐','cba','哈哈']}}">{{item}}  {{index}}</view>
+<view wx:for="gsg">{{item}}  {{index}}</view>
+<view wx:for="{{5}}">{{item}}  {{index}}</view>
+
+<!-- block标签 block包装元素，不进行渲染，只接收控制元素-->
+<block wx:if="{{isShow}}">
+  <view>Hello</view>
+</block>
+
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="id">{{movie}}----{{id}}</view>
+
+
+<!-- <block wx:for="{{nums}}" wx:for-item="sub_items">
+  <block wx:for="{{sub_items}}">
+      <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- Key的作用 -->
+<view wx:for="{{['a','b','c']}}" wx:key="index">{{item}}</view>
