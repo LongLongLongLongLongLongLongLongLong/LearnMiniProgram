@@ -1,1 +1,7 @@
 /* pages/home/home.wxss */
+
+.retange{
+  width: 300rpx;
+  height: 300rpx;
+  background: red;
+}

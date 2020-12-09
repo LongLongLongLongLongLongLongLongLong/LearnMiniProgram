@@ -1,2 +1,16 @@
-<!--pages/home/home.wxml-->
-<text>Hello</text>
+
+
+<button bindtap="handleBtnClick" size="mini">点击</button>
+<button bind:tap="handleBtnClick" size="mini">点击</button>
+<button catchtap="handleBtnClick" size="mini">点击</button>
+<button catch:tap="handleBtnClick" size="mini">点击</button>
+
+
+<view class="retange" 
+bindtouchstart="touchstart"
+bindtouchmove="touchmove"
+bindtouchend="touchend"
+bindtap="tap"
+bindlongpress="longpress"
+/>
+
