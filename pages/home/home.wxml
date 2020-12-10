@@ -1,3 +1,12 @@
-<!--pages/home/home.wxml-->
-<text>Hello</text>
-<mycpn></mycpn>
+
+<view class="title">Hello</view>
+
+<!-- 给自定义组件传递数据 -->
+<myprop title="哈哈哈哈" titleclass="red" />
+<myprop title="嘿嘿"  titleclass= "green" />
+<myprop title="呵呵" titleclass= "blue"/>
+
+
+<view>当前计数:{{counter}}</view>
+<myevent bind:increment="handleIncrement"/>
+

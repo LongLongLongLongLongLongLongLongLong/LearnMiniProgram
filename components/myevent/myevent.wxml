@@ -1,0 +1,2 @@
+<!--components/myevent/myevent.wxml-->
+<button size="mini" bindtap="btnclick">+1</button>

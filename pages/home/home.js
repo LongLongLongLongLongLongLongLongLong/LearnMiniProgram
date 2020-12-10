@@ -6,6 +6,15 @@ Page({
    */
   data: {
 
+    counter:0
+  },
+
+  handleIncrement(event){
+    this.setData({
+      counter:this.data.counter+1
+    })
+    //event中有自定义组件传递过来的数据
+    console.log(event);
   },
 
   /**

@@ -1,0 +1,9 @@
+/* components/myprop/myprop.wxss */
+
+.title{
+  font-size: 60rpx;
+}
+
+.content{
+  color:blue
+}

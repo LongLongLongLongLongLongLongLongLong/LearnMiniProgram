@@ -1,3 +1,0 @@
-<!--components/mycpn/mycpn.wxml-->
-<view class="title">自定义标题</view>
-<view class="content">自定义内容</view>
