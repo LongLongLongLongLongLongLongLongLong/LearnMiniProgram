@@ -1,2 +1,2 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+<tab-control titles="{{['流行','精选','新款','旧款']}}" bind:itemHasclick="handleItemClick"/>
