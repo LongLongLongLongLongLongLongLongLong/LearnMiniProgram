@@ -12,6 +12,41 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      //1.发送网络请求
+      // wx.request({
+      //   url: 'http://123.207.32.32:8000/recommend',
+      //   success:function(res){
+      //     console.log(res);
+      //   }
+      // })
+
+      //2.发送get请求并携带参数
+      // wx.request({
+      //   url: 'http://123.207.32.32:8000/recommend',
+      //   data:{
+      //     type:'sell',
+      //     page:1
+      //   },
+      //   success:function(res){
+      //       console.log;(res)
+      //   }
+      // })
+
+      //3.发送post请求并携带参数
+      wx.request({
+        url: 'http://httpbin.org/post',
+        method:'post',
+        data:{
+          name:'hello',
+          age:1
+        },
+        success:function(res){
+            console.log;(res)
+        },
+        fail:function(res){
+          console.log;(res)
+        }
+      })
 
   },
 
