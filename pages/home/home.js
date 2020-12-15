@@ -61,6 +61,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+      return {
+        title:'你好呀', //转发时展示的标题
+        path:'/pages/about/about', //点击小程序时展示的页面
+        //分享时展示的图片，可以是本地图片，也可以是网络图片
+        imageUrl:'https://images.pexels.com/photos/2110449/pexels-photo-2110449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+      }
   }
 })

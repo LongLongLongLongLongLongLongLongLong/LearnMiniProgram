@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <text>Hello</text>
+
+<button size="mini" open-type="share">分享</button>
