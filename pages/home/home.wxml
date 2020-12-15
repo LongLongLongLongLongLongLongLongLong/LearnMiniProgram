@@ -1,2 +1,15 @@
 <!--pages/home/home.wxml-->
-<text>Hello</text>
+
+<button size="mini">你好</button>
+
+<button size="mini" bind:tap="showToast">展示Tost</button>
+
+<button size="mini" bind:tap="showModal">展示Modal</button>
+
+<button size="mini" bind:tap="showLoading">展示Loading</button>
+
+<button size="mini" bind:tap="showActionSheeet">showActionSheeet</button>
+
+
+
+
