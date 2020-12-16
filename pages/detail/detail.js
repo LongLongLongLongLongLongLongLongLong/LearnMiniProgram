@@ -1,31 +1,26 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:'home的标题'
+
   },
+  handleBack(){
 
-  gotoDetail(){
-    wx.navigateTo({
-      // url: '/pages/detail/detail',  
-      //以下是传递数据   
-      url: '/pages/detail/detail?title=你是谁',
-
+    //通过代码方式返回
+    wx.navigateBack({
+      delta: 1,
     })
-
-    // wx.redirectTo({
-    //   url: '/pages/detail/detail',
-    // })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 输出 {name: "haha", sex: "1"}
+    console.log(options);
   },
 
   /**
@@ -54,6 +49,16 @@ Page({
    */
   onUnload: function () {
 
+    //1.全局函数返回所有栈的页面
+   const pages =  getCurrentPages();
+   //得到home页面对象  pages.length-2是得到当前页面的前一个页面对象
+   const home = pages[pages.length-2];
+
+   //2.调用页面对象的方法修改数据
+   home.setData({
+     title:'我是修改后的标题'
+   })
+   console.log(pages);
   },
 
   /**

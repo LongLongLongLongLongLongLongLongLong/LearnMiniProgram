@@ -1,2 +1,20 @@
-<!--pages/home/home.wxml-->
-<text>Hello</text>
+
+<!-- 1.url 路径可以相对路径，也可以是绝对路径 -->
+<navigator url='/pages/detail/detail'>跳到详情页面</navigator>
+
+<!-- 2. open-type="redirect" 会将跳转前的页面关闭 -->
+<navigator url='/pages/detail/detail' open-type="redirect">跳到详情页面(redirect)</navigator>
+<!-- open-type="switchTab" 可以跳转到tabbar页面 -->
+<navigator url='/pages/about/about' open-type="switchTab">跳到详情页面(switchTab)</navigator>
+
+<!-- open-type="reLaunch" 会关闭所有页面 -->
+<navigator url='/pages/detail/detail' open-type="reLaunch">跳到详情页面(reLaunch)</navigator>
+
+
+<!-- 通过在路径后面拼接key=value来传递数据 -->
+<navigator url='/pages/detail/detail?name=haha&sex=1'>跳到详情页面并传递数据</navigator>
+<text>{{title}}</text>
+
+<button size="mini" bindtap="gotoDetail">跳转到详情页面</button>
+
+

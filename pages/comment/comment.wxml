@@ -1,0 +1,6 @@
+<!--pages/comment/comment.wxml-->
+<text>pages/comment/comment.wxml</text>
+
+<!-- 跳转两次到评论页面，如果要从评论页面直接跳转到首页，设置 delta = 2 -->
+<navigator open-type="navigateBack" delta="2">返回首页</navigator>
+

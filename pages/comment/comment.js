@@ -1,24 +1,11 @@
-// pages/home/home.js
+// pages/comment/comment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:'home的标题'
-  },
 
-  gotoDetail(){
-    wx.navigateTo({
-      // url: '/pages/detail/detail',  
-      //以下是传递数据   
-      url: '/pages/detail/detail?title=你是谁',
-
-    })
-
-    // wx.redirectTo({
-    //   url: '/pages/detail/detail',
-    // })
   },
 
   /**

@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<text>详情页面</text>
+
+<navigator url="/pages/comment/comment" >跳到评论页面</navigator>
+
+<!-- open-type="navigateBack" 返回功能，返回到上一页 -->
+<navigator open-type="navigateBack">返回</navigator>
+
+<button size="mini" bindtap="handleBack">通过按钮调用代码返回</button>
