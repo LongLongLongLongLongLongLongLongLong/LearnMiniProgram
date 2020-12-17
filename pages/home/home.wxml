@@ -1,2 +1,20 @@
-<!--pages/home/home.wxml-->
-<text>Hello</text>
+<!-- 展示轮播图 -->
+<w-swipter list="{{banners}}"></w-swipter>
+<!-- 推荐数据的展示 -->
+<w-recommend recommends="{{recommends}}" bind:imageLoad="handImageLoad"></w-recommend>
+<w-tabcontrol id="tabcontrol" titles="{{titles}}" bind:itemHasclick="itemClick" class="{{isTabFixed? 'fixed':''}}"></w-tabcontrol>
+
+<w-tabcontrol titles="{{titles}}" wx:if="{{isTabFixed}}"></w-tabcontrol>
+
+<!-- 展示商品数据 -->
+
+<view class="goods">
+  <block wx:for="{{goods[currentType].list}}">
+      <good-item class="good-item" item="{{item}}"/>
+  </block>
+</view>
+
+<!-- 没用hidden，因为hidden对自定义的组件是无效的 -->
+<backtop wx:if="{{showBackTop}}"></backtop>
+
+

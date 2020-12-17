@@ -1,0 +1,23 @@
+/* pages/home/childCopns/w-recommend/w-recommend.wxss */
+
+.recommend{
+  display: flex;
+  padding-bottom: 40rpx;
+  border-bottom: 16rpx solid #eeeeee;
+}
+
+.recommendItem{
+  flex:1;
+  text-align: center;
+}
+
+.recommendItem image{
+ margin-top: 40rpx;
+ width: 160rpx;
+ height: 160rpx;
+}
+
+.recommendItem view{
+ font-size: 30rpx;
+ color:#555;
+ }
